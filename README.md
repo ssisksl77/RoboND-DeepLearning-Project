@@ -7,3 +7,6 @@
 
 
 This project is based on Udacity DeepLearning Project. check out README.md_udacity
+
+test video
+https://youtu.be/QYENm4WjB8k
