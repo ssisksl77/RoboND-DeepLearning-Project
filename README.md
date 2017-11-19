@@ -6,7 +6,7 @@
 ![ex_screenshot](./docs/misc/udacity_project04.jpg)
 
 ### Fully Convolutional Network
-is useful for image classification. If I want to recognize an object I will use a fully connected layer with softmax activation. However, If I need to recognize the object and know where it is. Things change, I have to know not just shape, color but also spacial data.
+is useful for image classification. If I want to recognize an object I will use a fully connected layer with softmax activation. However, If I just need to recognize the object and know where it is. Things change, I have to know not just shape, color but also spacial data.
 
 ### Batch Size
 I've used default images which is about 4000(4131 by 'ls | wc -l'), so I set 42 batches and 100 epochs.
