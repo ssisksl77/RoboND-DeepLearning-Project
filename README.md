@@ -20,6 +20,7 @@ https://www.facebook.com/groups/TensorFlowKR/permalink/447826408891756 (Korean)
 
 ### Further
 I should've collected more datas to get more accurate model. If I have sufficient datas for train, validation. I believe that I would have models.
+
 ![ex_screenshot](./docs/misc/5_run6cam1_00064.jpeg)
-![ex_screenshot](./docs/misc/5_run6_mask_00064.jpeg)
+![ex_screenshot](./docs/misc/5_run6_mask_00064.png)
 by comparing these iamges. tensorflow(or keras) makes a model. due to the fact that all datas I have got is for human. It won't follow dogs, cats, but with correct datas It will
