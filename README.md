@@ -6,18 +6,22 @@
 ![ex_screenshot](./docs/misc/udacity_project04.jpg)
 
 ### Fully Convolutional Network & fully connected network
-Convolutional Network is useful for image classification. If I want to recognize an object I will use a fully connected layer with softmax activation. However, If I just need to recognize the object and know where it is. Things change, I have to know not just shape, color but also spacial data.
+Convolutional Network is useful for image classification. If I want to recognize an object I will use a fully connected layer with softmax activation. 
+ However, If I need to recognize the object and know where it is. Due to the fact that Fully connected layer doesn't contain spacial data, Convolutional Network does because it makes a group with adjacent data(in image, pixels) treat them as a collective.
 In CovNet, Encoder extracts features from the image, and Decoder up-sacles the output of the encoder that it's the same size as the original image. Furthermore, decoder add spacial information to encoded data.
 
-### Batch Size
-I've used default images which is about 4000(4131 by 'ls | wc -l'), so I set 42 batches and 100 epochs.
-
+![ex_screenshot](./docs/misc/udacity_project05.jpg)
 ### 1x1 convolution
-1x1 convolution can reduce/increase filters. It is to generate a deeper network without simply stacking more layers. And also It is inexpensive. Due to smaller kernel size(1x1), it causes less over-fitting
+1x1 convolution can reduce/increase filters. It is to generate a deeper network without simply stacking more layers. And also It is inexpensive. Due to smaller kernel size(1x1), it causes less over-fitting. It is also useful containing spacial information. replacing Fully Connected Layer with 1x1 Convolution Layers let results preserve spatial information.
+Fully Connected Layer with same size returns same number of feature. However Convolution Layer could change dimensionality of the layer. sometimes It makes linear classification to non-linear. It will make much more accurate model.
+
 
 References: 
 http://iamaaditya.github.io/2016/03/one-by-one-convolution/
 https://www.facebook.com/groups/TensorFlowKR/permalink/447826408891756 (Korean)
+
+### Batch Size
+I've used default images which is about 4000(4131 by 'ls | wc -l'), so I set 42 batches and 100 epochs.
 
 ### Number of Epochs
 I’ve tried a number of epochs 70, 100, 120. I thought more epochs, more accuracy because 100 times looking big deal.
