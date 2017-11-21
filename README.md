@@ -15,7 +15,6 @@ In CovNet, Encoder extracts features from the image, and Decoder up-sacles the o
 1x1 convolution can reduce/increase filters. It is to generate a deeper network without simply stacking more layers. And also It is inexpensive. Due to smaller kernel size(1x1), it causes less over-fitting. It is also useful containing spacial information. replacing Fully Connected Layer with 1x1 Convolution Layers let results preserve spatial information.
 Fully Connected Layer with same size returns same number of feature. However Convolution Layer could change dimensionality of the layer. sometimes It makes linear classification to non-linear. It will make much more accurate model.
 
-
 References: 
 http://iamaaditya.github.io/2016/03/one-by-one-convolution/
 https://www.facebook.com/groups/TensorFlowKR/permalink/447826408891756 (Korean)
@@ -38,3 +37,5 @@ I should've collected more datas to get more accurate model. If I have sufficien
 ![ex_screenshot](./docs/misc/5_run6_mask_00064.png)
 
 by comparing these iamges. tensorflow(or keras) makes a model. due to the fact that all datas I have got is for human. It won't follow dogs, cats, but with correct datas It will
+
+![ex_screenshot](./docs/misc/udacity_project06.jpg)
