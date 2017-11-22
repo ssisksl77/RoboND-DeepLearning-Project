@@ -39,4 +39,5 @@ I should've collected more datas to get more accurate model. If I have sufficien
 by comparing these iamges. tensorflow(or keras) makes a model. due to the fact that all datas I have got is for human. It won't follow dogs, cats, but with correct datas It will
 
 ![ex_screenshot](./docs/misc/udacity_project06.jpg)
+in terms of project
 ![ex_screenshot](./docs/misc/udacity_project07.jpg)
